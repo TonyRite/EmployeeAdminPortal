@@ -77,6 +77,7 @@ namespace EmployeeAdminPortal.Controllers
 
         [HttpDelete]
         [Route("{id:guid}")]
+        //git test
         public IActionResult DeleteEmployee(Guid id)
         {
             var employee = dbContext.Employees.Find(id);
